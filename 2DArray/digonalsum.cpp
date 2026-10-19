@@ -42,3 +42,16 @@ int main() {
 
 
 // Time complexity = O(n^2)
+
+
+// ------------------------------ Method 2 -------------------------------------------------
+
+
+for(int i= 0;i<n;i++){
+    sum += mat[i][i]; // primary diagonal sum 
+    if(i != n-i-1){
+        sum += mat[i][n-i-1]; // secondary diagonal sum 
+    }
+}
+
+//  Time complexity = O(n) 
