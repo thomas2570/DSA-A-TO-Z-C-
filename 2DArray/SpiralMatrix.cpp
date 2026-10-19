@@ -20,13 +20,13 @@ void spiralMatrix(int matrix[][4], int n, int m) {
 
         // Bottom row
         for (int j = ecol - 1; j >= scol; j--) {
-            if (srow == erow) break;
+            if (srow == erow) break; // ye isliye lagya hai taki odd number of matrix ho to middle me dubara repeate ho jate hai islye break kar dete hai
             cout << matrix[erow][j] << " ";
         }
 
         // Left column
         for (int i = erow - 1; i > srow; i--) {
-            if (scol == ecol) break;
+            if (scol == ecol) break;   // ye isliye lagya hai taki odd number of matrix ho to middle me dubara repeate ho jate hai islye break kar dete hai 
             cout << matrix[i][scol] << " ";
         }
 
@@ -48,6 +48,13 @@ int main() {
     };
 
     spiralMatrix(matrix, 4, 4);
+
+     int matrix2[3][4] = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12}
+    };
+    spiralMatrix(matrix, 3, 4);
 
     return 0;
 }
