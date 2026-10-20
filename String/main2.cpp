@@ -7,7 +7,12 @@ int main(){
     cout << arr << endl;
     "a" // string literals
     "helloworld" // string litreals
-    
+
 
     return 0;
 }
+
+char work[] = "code";
+cout << work << endl;
+
+// output = code 
